@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <left>
+        <GridPane prefHeight="355.0" prefWidth="357.0" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="85.20001220703125" minWidth="10.0" prefWidth="83.59999389648438" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="97.20001220703125" minWidth="10.0" prefWidth="85.20000610351563" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <BorderPane.margin>
+                <Insets left="10.0" right="10.0" top="10.0" />
+            </BorderPane.margin>
+            <children>
+                <Label prefHeight="18.0" prefWidth="372.0" style="-fx-background-color: gray; -fx-border-color: black;" text="Processed By" GridPane.columnSpan="4">
+                    <padding>
+                        <Insets left="5.0" />
+                    </padding>
+                </Label>
+                <Label prefHeight="18.0" prefWidth="94.0" text="Employee #:" GridPane.rowIndex="1">
+                    <padding>
+                        <Insets left="5.0" />
+                    </padding>
+                </Label>
+                <ComboBox fx:id="cbxEmployeeID" prefWidth="81.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <GridPane.margin>
+                        <Insets right="5.0" />
+                    </GridPane.margin>
+                </ComboBox>
+                <TextField fx:id="txtEmployeeName" maxHeight="20.0" minHeight="7.0" prefHeight="7.0" prefWidth="154.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="1">
+                    <GridPane.margin>
+                        <Insets left="5.0" />
+                    </GridPane.margin>
+                </TextField>
+                <Label prefHeight="18.0" prefWidth="403.0" style="-fx-background-color: gray; -fx-border-color: black;" text="Processed For" GridPane.columnSpan="4" GridPane.rowIndex="2">
+                    <padding>
+                        <Insets left="5.0" />
+                    </padding>
+                </Label>
+                <Label prefHeight="18.0" prefWidth="90.0" text="Driver's Lic #:" GridPane.rowIndex="3">
+                    <padding>
+                        <Insets left="5.0" />
+                    </padding>
+                </Label>
+                <ComboBox fx:id="cbxCustomerID" prefWidth="91.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="3">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                </ComboBox>
+                <Label prefHeight="18.0" prefWidth="85.0" text="Cust Name:" GridPane.rowIndex="4">
+                    <padding>
+                        <Insets left="5.0" />
+                    </padding>
+                </Label>
+                <TextField fx:id="txtCustomerName" maxHeight="20.0" minHeight="0.0" prefHeight="0.0" prefWidth="238.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="4">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                </TextField>
+                <TextField fx:id="txtCustomerAddress" maxHeight="20.0" minHeight="10.0" prefHeight="15.0" prefWidth="238.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="5">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+                </TextField>
+                <TextField fx:id="txtCustomerCity" maxHeight="20.0" minHeight="10.0" prefHeight="15.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="6" />
+                <Label prefHeight="18.0" prefWidth="98.0" text="Address:" GridPane.rowIndex="5">
+                    <padding>
+                        <Insets left="5.0" />
+                    </padding>
+                </Label>
+                <Label prefHeight="18.0" prefWidth="94.0" text="City:" GridPane.rowIndex="6">
+                    <padding>
+                        <Insets left="5.0" />
+                    </padding>
+                </Label>
+                <Label prefHeight="18.0" prefWidth="84.0" text="State:" GridPane.rowIndex="7">
+                    <padding>
+                        <Insets left="5.0" />
+                    </padding>
+                </Label>
+                <ComboBox fx:id="cbxCustomerStates" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                <Label prefHeight="18.0" prefWidth="84.0" text="ZIP Code:" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                    <GridPane.margin>
+                        <Insets left="10.0" />
+                    </GridPane.margin>
+                </Label>
+                <TextField fx:id="txtCustomerZIPCode" maxHeight="20.0" minHeight="10.0" prefHeight="15.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                <Label prefHeight="18.0" prefWidth="378.0" style="-fx-background-color: gray; -fx-border-color: black;" text="Car Selected" GridPane.columnSpan="4" GridPane.rowIndex="8">
+                    <padding>
+                        <Insets left="5.0" />
+                    </padding>
+                </Label>
+                <Label prefHeight="18.0" prefWidth="95.0" text="Tag Number:" GridPane.rowIndex="9">
+                    <padding>
+                        <Insets left="5.0" />
+                    </padding>
+                </Label>
+                <Label prefHeight="18.0" prefWidth="95.0" text="Car Condition:" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                    <GridPane.margin>
+                        <Insets left="10.0" />
+                    </GridPane.margin>
+                </Label>
+                <ComboBox fx:id="cbxCarID" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                <ComboBox fx:id="cbxCarConditions" prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+                <Label prefHeight="18.0" prefWidth="102.0" text="Make:" GridPane.rowIndex="10">
+                    <padding>
+                        <Insets left="5.0" />
+                    </padding>
+                </Label>
+                <Label prefHeight="18.0" prefWidth="126.0" text="Model:" GridPane.columnIndex="2" GridPane.rowIndex="10">
+                    <GridPane.margin>
+                        <Insets left="10.0" />
+                    </GridPane.margin>
+                </Label>
+                <TextField fx:id="txtMake" maxHeight="20.0" minHeight="10.0" prefHeight="15.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                <TextField fx:id="txtModel" maxHeight="20.0" minHeight="10.0" prefHeight="15.0" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+                <TextField fx:id="txtCarYear" maxHeight="20.0" minHeight="10.0" prefHeight="15.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                <TextField fx:id="txtMileageStart" maxHeight="20.0" minHeight="10.0" prefHeight="15.0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                <TextField fx:id="txtMileageEnd" maxHeight="20.0" minHeight="10.0" prefHeight="15.0" GridPane.columnIndex="3" GridPane.rowIndex="12" />
+                <ComboBox fx:id="cbxTankLevels" prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="11" />
+                <Label prefHeight="18.0" prefWidth="84.0" text="Tank Level:" GridPane.columnIndex="2" GridPane.rowIndex="11">
+                    <GridPane.margin>
+                        <Insets left="10.0" />
+                    </GridPane.margin>
+                </Label>
+                <Label prefHeight="18.0" prefWidth="89.0" text="Year:" GridPane.rowIndex="11">
+                    <padding>
+                        <Insets left="5.0" />
+                    </padding>
+                </Label>
+                <Label prefHeight="18.0" prefWidth="88.0" text="Mileage Start:" GridPane.rowIndex="12">
+                    <padding>
+                        <Insets left="5.0" />
+                    </padding>
+                </Label>
+                <Label prefHeight="18.0" prefWidth="86.0" text="Mileage End:" GridPane.columnIndex="2" GridPane.rowIndex="12">
+                    <GridPane.margin>
+                        <Insets left="10.0" />
+                    </GridPane.margin>
+                </Label>
+            </children>
+        </GridPane>
+    </left>
+    <bottom>
+        <Separator prefHeight="35.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+    </bottom>
+    <right>
+        <GridPane prefHeight="346.0" prefWidth="302.0" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="101.60003662109375" minWidth="10.0" prefWidth="99.20001220703125" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.6" minWidth="10.0" prefWidth="75.6" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="82.20001220703125" minWidth="10.0" prefWidth="70.9999755859375" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="92.20001220703125" minWidth="10.0" prefWidth="59.000024414062494" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="23.600012207031256" minHeight="10.0" prefHeight="20.400000000000006" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="36.400000000000006" minHeight="10.0" prefHeight="22.799999999999983" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="29.199987792968756" minHeight="10.0" prefHeight="25.4000244140625" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="43.599999999999994" minHeight="10.0" prefHeight="27.799975585937517" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="41.20001831054685" minHeight="10.0" prefHeight="23.800018310546875" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="47.79996337890623" minHeight="10.0" prefHeight="19.79998779296875" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="58.19998779296873" minHeight="10.0" prefHeight="42.40001220703124" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <BorderPane.margin>
+                <Insets left="10.0" right="10.0" top="10.0" />
+            </BorderPane.margin>
+            <children>
+                <Label prefHeight="18.0" prefWidth="345.0" style="-fx-background-color: gray; -fx-border-color: black;" text="Order Timing" GridPane.columnSpan="4">
+                    <padding>
+                        <Insets left="5.0" />
+                    </padding>
+                </Label>
+                <Label prefHeight="18.0" prefWidth="90.0" text="Date Processed:" GridPane.rowIndex="1" />
+                <Label prefHeight="18.0" prefWidth="132.0" text="Rent Start Date:" GridPane.rowIndex="2" />
+                <Label prefHeight="18.0" prefWidth="138.0" text="Rend End Date:" GridPane.rowIndex="3" />
+                <Label prefHeight="18.0" prefWidth="149.0" text="Total Days:" GridPane.rowIndex="4" />
+                <DatePicker fx:id="dtpDateProcessed" maxHeight="20.0" minHeight="10.0" prefHeight="15.0" prefWidth="219.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="1" />
+                <DatePicker fx:id="dtpStartDate" maxHeight="20.0" minHeight="10.0" onAction="#dtpStartDate_ValueChanged" prefHeight="15.0" prefWidth="254.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="2" />
+                <DatePicker fx:id="dtpEndDate" maxHeight="20.0" minHeight="10.0" onAction="#dtpEndDate_ValueChanged" prefHeight="15.0" prefWidth="264.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="3" />
+                <TextField fx:id="txtDays" maxHeight="20.0" maxWidth="26.0" minHeight="5.0" minWidth="5.0" prefHeight="20.0" prefWidth="26.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                <Label prefHeight="18.0" prefWidth="82.0" text="Order Status:" translateX="-45.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                <ComboBox fx:id="cbxOrderStatus" prefHeight="26.0" prefWidth="143.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets left="26.0" />
+               </GridPane.margin></ComboBox>
+                <Label prefHeight="18.0" prefWidth="308.0" style="-fx-background-color: gray; -fx-border-color: black;" text="Order Evaluation" GridPane.columnSpan="4" GridPane.rowIndex="5">
+                    <padding>
+                        <Insets left="5.0" />
+                    </padding>
+                </Label>
+                <Label prefHeight="18.0" prefWidth="125.0" text="Rate Applied:" GridPane.rowIndex="6">
+                    <padding>
+                        <Insets left="5.0" />
+                    </padding>
+                </Label>
+                <Label prefHeight="18.0" prefWidth="138.0" text="Sub-Total:" GridPane.rowIndex="7">
+                    <padding>
+                        <Insets left="5.0" />
+                    </padding>
+                </Label>
+                <Label prefHeight="18.0" prefWidth="142.0" text="Tax-Rate:" GridPane.rowIndex="8">
+                    <padding>
+                        <Insets left="5.0" />
+                    </padding>
+                </Label>
+                <Label prefHeight="18.0" prefWidth="136.0" text="Tax-Amount:" GridPane.rowIndex="9">
+                    <padding>
+                        <Insets left="5.0" />
+                    </padding>
+                </Label>
+                <Label prefHeight="18.0" prefWidth="153.0" text="Order Total:" GridPane.rowIndex="10">
+                    <padding>
+                        <Insets left="5.0" />
+                    </padding>
+                </Label>
+                <Label prefHeight="18.0" prefWidth="186.0" text="Receipt #:" translateY="5.0" GridPane.rowIndex="11">
+                    <padding>
+                        <Insets left="5.0" />
+                    </padding>
+                </Label>
+                <TextField fx:id="txtRateApplied" maxHeight="20.0" minHeight="10.0" prefHeight="15.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                <TextField fx:id="txtSubTotal" maxHeight="20.0" minHeight="10.0" prefHeight="15.0" translateY="2.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                <TextField fx:id="txtTaxRate" maxHeight="20.0" maxWidth="59.0" minHeight="10.0" minWidth="20.0" prefHeight="15.0" prefWidth="32.0" translateY="3.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                <TextField fx:id="txtTaxAmount" maxHeight="20.0" minHeight="10.0" prefHeight="15.0" translateY="1.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                <TextField fx:id="txtOrderTotal" maxHeight="20.0" minHeight="10.0" prefHeight="15.0" translateY="1.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                <TextField fx:id="txtReceiptNumber" maxHeight="20.0" minHeight="10.0" prefHeight="15.0" translateY="5.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                <Label text="\%" translateX="62.0" translateY="2.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                <Button fx:id="btnRentalRates" mnemonicParsing="false" onAction="#btnRentalRates_Click" prefHeight="26.0" prefWidth="146.0" text="Rental Rates..." GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="6">
+                    <GridPane.margin>
+                        <Insets left="10.0" />
+                    </GridPane.margin>
+                </Button>
+                <Button fx:id="btnCalculate" maxHeight="33.0" minHeight="1.0" mnemonicParsing="false" onAction="#btnCalculate_Click" prefHeight="1.0" prefWidth="134.0" text="Calculate" translateY="-2.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="7" GridPane.rowSpan="2">
+                    <GridPane.margin>
+                        <Insets left="10.0" top="2.0" />
+                    </GridPane.margin>
+                </Button>
+                <Button fx:id="btnPrint" mnemonicParsing="false" onAction="#btnPrint_Click" prefHeight="34.0" prefWidth="124.0" text="Print..." translateY="-5.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="9">
+                    <GridPane.margin>
+                        <Insets left="10.0" />
+                    </GridPane.margin>
+                </Button>
+                <Button fx:id="btnPrintPreview" mnemonicParsing="false" onAction="#btnPrintPreview_Click" prefHeight="15.0" prefWidth="124.0" text="Print Preview..." GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="10">
+                    <GridPane.margin>
+                        <Insets bottom="1.0" left="10.0" />
+                    </GridPane.margin>
+                </Button>
+                <Button fx:id="btnOpen" mnemonicParsing="false" prefHeight="26.0" prefWidth="72.0" text="Open" translateY="5.0" GridPane.columnIndex="2" GridPane.rowIndex="11">
+                    <GridPane.margin>
+                        <Insets left="10.0" right="3.0" top="5.0" />
+                    </GridPane.margin>
+                </Button>
+                <Button fx:id="btnClose" mnemonicParsing="false" prefHeight="26.0" prefWidth="142.0" text="Close" translateY="5.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="12">
+                    <GridPane.margin>
+                        <Insets left="10.0" />
+                    </GridPane.margin>
+                </Button>
+                <Button fx:id="btnSave" mnemonicParsing="false" prefHeight="26.0" prefWidth="78.0" text="Save" translateY="5.0" GridPane.columnIndex="3" GridPane.rowIndex="11">
+                    <GridPane.margin>
+                        <Insets left="3.0" top="5.0" />
+                    </GridPane.margin>
+                </Button>
+                <Button fx:id="btnNewRentalOrder" mnemonicParsing="false" onAction="#btnNewRentalOrder_Click" prefHeight="26.0" prefWidth="181.0" text="New Rental Order/Reset" translateY="5.0" GridPane.columnSpan="2" GridPane.rowIndex="12" />
+            </children>
+        </GridPane>
+    </right>
+</BorderPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="263.0" prefWidth="462.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RentalRates">
+   <children>
+      <TableView fx:id="rentalRatesProductTableView" layoutX="14.0" layoutY="14.0" prefHeight="234.0" prefWidth="431.0">
+         <columns>
+            <TableColumn fx:id="colCategory" prefWidth="90.0" text="Category" />
+            <TableColumn fx:id="colDaily" text="Daily" />
+            <TableColumn fx:id="colWeekly" text="Weekly" />
+            <TableColumn fx:id="colMonthly" text="Monthly" />
+            <TableColumn fx:id="colWeekend" prefWidth="100.0" text="Weekend" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

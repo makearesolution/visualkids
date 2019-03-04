@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="344.0" prefWidth="549.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.EmployeeRecord">
+   <children>
+      <Button fx:id="btnClose" layoutX="438.0" layoutY="305.0" mnemonicParsing="false" onAction="#btnClose_Click" prefHeight="25.0" prefWidth="96.0" text="Close" />
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="280.0" prefWidth="520.0" style="-fx-background-color: gray; -fx-border-color: black;">
+         <children>
+            <TableView fx:id="employeeRecordProductTableView" prefHeight="280.0" prefWidth="492.0">
+              <columns>
+                <TableColumn fx:id="EmployeeID" prefWidth="50.0" text="Empl ID" />
+                <TableColumn fx:id="EmployeeNumber" prefWidth="65.0" text="Empl #" />
+                  <TableColumn fx:id="FirstName" prefWidth="70.0" text="First Name" />
+                  <TableColumn fx:id="LastName" prefWidth="70.0" text="Last Name" />
+                  <TableColumn fx:id="FullName" prefWidth="120.0" text="Full Name" />
+                  <TableColumn fx:id="Title" prefWidth="111.39999389648438" text="Title" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</Pane>
